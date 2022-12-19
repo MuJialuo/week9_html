@@ -1,14 +1,14 @@
 
 <form class="myform">
 
- <link href="styles/style.css" rel="stylesheet" />
-
-
 <style>
 
 </style>
 
 <head>
+    <link href="style.css" rel="stylesheet" />
+    
+
     <title>
         Welcome!
     </title>
@@ -16,12 +16,29 @@
 
 <body>
     <h1>Welcome!</h1> 
-    <p> This is a online game.</p>
+    <p> This is a online game: TicTacToe</p>
     <hr>
     <p>hello, Please input the player number:</p>
 
 <!-- 这是一个注释 -->
 
+<!-- 
+    <form action="">
+    Human Player number: <input type="text" name="player number"><br>
+    </form>
+    
+-->
 
+    <p>
+        Human Player Number:
+    </p>
+
+    <form name="input" action="html_form_action.php" method="get">
+        <input type="radio" name="human_number" value="zero">0<br>
+        <input type="radio" name="human_number" value="one">1<br>
+        <input type="radio" name="human_number" value="two">2
+        <p> </p>
+        <input type="submit" value="Start Game">
+    </form>
 
 </body>
